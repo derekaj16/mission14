@@ -1,6 +1,4 @@
-import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from '../components/Header/Header';
 import Home from '../components/Home/Home';
 import MovieList from '../components/MovieList/MovieList';
 import Podcasts from '../components/Podcasts/Podcasts';
