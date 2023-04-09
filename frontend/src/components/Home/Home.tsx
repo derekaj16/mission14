@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
+import joel from '../../img/JoelHiltonHeadshot.jpg';
 
 function Home() {
     return (
@@ -14,10 +15,9 @@ function Home() {
                         out all of my best and all the information about them.
                     </p>
                     <hr className="my-4" />
-                    <p>
-                        I built this website using React on the frontend and C#
-                        on the backend!
-                    </p>
+                    <div className="mx-auto text-center">
+                        <img src={joel} alt="Headshot of me" />
+                    </div>
                 </div>
             </div>
         </div>
