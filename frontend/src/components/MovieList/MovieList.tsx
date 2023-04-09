@@ -6,9 +6,11 @@ function MovieList() {
     const [movies, setMovies] = useState<Movie[]>([]);
     const [isLoading, setIsLoading] = useState(true);
 
+    // This function previews a loading effect until the movies
+    // have been fetched from the API
     useEffect(() => {
         const fetchMovies = async () => {
-            const rsp = await fetch('https://localhost:4000/home');
+            const rsp = await fetch('https://localhost:4000/home'); // Calling the API
             const temp = await rsp.json();
             setMovies(temp);
             setIsLoading(false);

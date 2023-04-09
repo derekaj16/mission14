@@ -1,4 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿// Derek Johnson
+// IS 413
+// Description: This program serves to provide movie data for the Joel Hilton
+// Movie collection website. In this file, we set up services and permissions.
+
+using Microsoft.EntityFrameworkCore;
 using movies_api.Models;
 
 var builder = WebApplication.CreateBuilder(args);

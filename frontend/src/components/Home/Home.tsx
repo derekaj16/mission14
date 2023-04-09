@@ -5,8 +5,7 @@ import joel from '../../img/JoelHiltonHeadshot.jpg';
 function Home() {
     return (
         <div>
-            <Header slogan="This is a cool website" />
-
+            <Header />
             <div className="container">
                 <div className="jumbotron mx-5 my-5">
                     <h1 className="display-4">Joel Hilton Movie Collection</h1>

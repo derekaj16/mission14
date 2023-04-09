@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 namespace movies_api.Models;
 
+// The model for our movie object
+
 public partial class Movie
 {
     public int MovieId { get; set; }

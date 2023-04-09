@@ -6,6 +6,7 @@ import './App.css';
 
 function App() {
     return (
+        // Set up routing for our website so we can view the various pages
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />}></Route>

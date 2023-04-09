@@ -1,4 +1,4 @@
-import internal from 'stream';
+// This is the model on the frontend, just the same as it is on the backend
 
 export type Movie = {
     movieId: number;

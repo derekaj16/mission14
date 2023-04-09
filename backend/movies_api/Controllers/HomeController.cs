@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using movies_api.Models;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+// In this controller, we provide a get method for our frontend to reach and
+// pull data for all of our movies.
 
 namespace movies_api.Controllers
 {
@@ -22,6 +23,7 @@ namespace movies_api.Controllers
         [HttpGet(Name = "GetMovies")]
         public IEnumerable<Movie> GetMovies()
         {
+            // Filter movies by title and select only the edited movies
             var movies = context.Movies.Where(m => m.Edited == "Yes").OrderBy(m => m.Title).ToArray();
 
             return movies;
