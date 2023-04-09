@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../logo.png';
 import './Header.css';
@@ -17,16 +16,16 @@ function Header(props: any) {
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <Link to="/podcasts">
-                                    <a className="btn btn-primary" href="#">
+                                    <button className="btn btn-primary">
                                         Podcasts
-                                    </a>
+                                    </button>
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/movie-list">
-                                    <a className="btn btn-primary" href="#">
+                                    <button className="btn btn-primary">
                                         Movies
-                                    </a>
+                                    </button>
                                 </Link>
                             </li>
                         </ul>
