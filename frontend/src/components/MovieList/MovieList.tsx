@@ -24,8 +24,12 @@ function MovieList() {
             <div className="container m-5 mx-auto">
                 <div className="row">
                     <h4 className="text-center">
-                        Joel Hilton Movie Collection
+                        <b>Joel Hilton Movie Collection</b>
                     </h4>
+                    <p className="text-center">
+                        Did anyone else notice how all of these except one are
+                        rated R? :)
+                    </p>
                 </div>
 
                 {isLoading ? (
