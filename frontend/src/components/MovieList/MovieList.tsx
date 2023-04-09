@@ -37,8 +37,9 @@ function MovieList() {
                         <table className="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>Category</th>
+                                    <th>Movie ID</th>
                                     <th>Title</th>
+                                    <th>Category</th>
                                     <th>Year</th>
                                     <th>Director</th>
                                     <th>Rating</th>
@@ -50,8 +51,9 @@ function MovieList() {
                             <tbody>
                                 {movies.map((m) => (
                                     <tr key={m.movieId}>
-                                        <td>{m.category}</td>
+                                        <td>{m.movieId}</td>
                                         <td>{m.title}</td>
+                                        <td>{m.category}</td>
                                         <td>{m.year}</td>
                                         <td>{m.director}</td>
                                         <td>{m.rating}</td>

@@ -7,7 +7,7 @@ export type Movie = {
     year: number;
     director: string;
     rating: string;
-    edited: boolean;
+    edited: string;
     lentTo: string;
     notes: string;
 };

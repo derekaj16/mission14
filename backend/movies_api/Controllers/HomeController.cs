@@ -22,7 +22,7 @@ namespace movies_api.Controllers
         [HttpGet(Name = "GetMovies")]
         public IEnumerable<Movie> GetMovies()
         {
-            var movies = context.Movies.ToArray();
+            var movies = context.Movies.Where(m => m.Edited == "Yes").OrderBy(m => m.Title).ToArray();
 
             return movies;
         }
